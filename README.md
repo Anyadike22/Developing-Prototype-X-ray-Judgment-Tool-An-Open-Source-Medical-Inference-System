@@ -52,5 +52,5 @@ This architecture represents a streamlined machine learning inference pipeline s
 
 # Gradio Interface of the X-Ray Judgment Tool
 
-![](X-ray App.png)
+![](gradio-interface.png)
 
