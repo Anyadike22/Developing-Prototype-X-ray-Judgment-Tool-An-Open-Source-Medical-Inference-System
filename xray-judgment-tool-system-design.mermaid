@@ -1,0 +1,30 @@
+flowchart TD
+    subgraph User["User Interface"]
+        UI[Gradio Web Interface]
+    end
+
+    subgraph Processing["Image Processing & Classification"]
+        Transform[Image Transformation]
+        Model[Pre-trained DenseNet121 Model]
+        Prediction[Prediction Logic]
+    end
+
+    subgraph Data["Model Components"]
+        Weights[Pre-trained Weights]
+        Labels[Pathology Labels]
+    end
+
+    UI -->|Upload X-ray Image| Transform
+    Transform -->|Resize to 224x224\nConvert to Grayscale\nNormalize| Model
+    Weights -->|Load| Model
+    Labels -->|Interpret Results| Prediction
+    Model -->|Forward Pass| Prediction
+    Prediction -->|Classification Results| UI
+
+    classDef userInterface fill:#f9f,stroke:#333,stroke-width:2px
+    classDef processing fill:#bbf,stroke:#333,stroke-width:1px
+    classDef data fill:#bfb,stroke:#333,stroke-width:1px
+    
+    class User userInterface
+    class Processing processing
+    class Data data
