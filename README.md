@@ -9,6 +9,6 @@ The model is not being fine-tuned for clinical diagnostics, so this prototype se
 
 # System Design for the Prototype X-Ray Judgment Tool
 
-![](system design.png)
+![](System-design.png)
 
 
