@@ -54,3 +54,10 @@ This architecture represents a streamlined machine learning inference pipeline s
 
 ![](gradio-interface.png)
 
+
+#Testing the Deployed App with X-ray Image 
+
+![](test.png)
+
+
+
